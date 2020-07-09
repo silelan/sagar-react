@@ -3,16 +3,16 @@
 
 ### Home Page
 
-![Home Page](https://github.com/evolvan/file-conversion/blob/master/screenshots/home.png)
+![Home Page](https://github.com/silelan/sagar-react/blob/master/screenshots/home.png)
 
 ### About Page
 
-![About Page](https://github.com/evolvan/file-conversion/blob/master/screenshots/content.png)
+![About Page](https://github.com/silelan/sagar-react/blob/master/screenshots/about.png)
 
 ### Service Page
 
-![Service Page](https://github.com/evolvan/file-conversion/blob/master/screenshots/footer.png)
+![Service Page](https://github.com/silelan/sagar-react/blob/master/screenshots/service.png)
 
 ### Contact Page
 
-![Contact Page](https://github.com/evolvan/file-conversion/blob/master/screenshots/footer.png)
+![Contact Page](https://github.com/silelan/sagar-react/blob/master/screenshots/contact.png)
