@@ -1,32 +1,31 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
+import "./index.css";
+import Navbar from "./Navbar";
+import Home from './Home';
+import About from './About';
+import Service from './Service';
+import Contact from './Contact';
+import Footer from './Footer';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 class App extends React.Component {
-   constructor(props) {
-      super(props);
-		
-      this.state = {
-         data: ''
-      }
-      this.updateState = this.updateState.bind(this);
-      this.clearInput = this.clearInput.bind(this);
-   };
-   updateState(e) {
-      this.setState({data: e.target.value});
-   }
-   clearInput() {
-      this.setState({data: ''});
-      ReactDOM.findDOMNode(this.refs.myInput).focus();
-   }
    render() {
       return (
-         <div>
-            <input value = {this.state.data} onChange = {this.updateState} 
-               ref = "myInput"></input>
-            <button onClick = {this.clearInput}>CLEAR</button>
-            <h4>{this.state.data}</h4>
-         </div>
-      );
+         <>
+         <Navbar/>
+         
+         <Switch>
+            <Route exact path = "/" component = {Home} />
+            <Route exact path = "/about" component = {About} />
+            <Route exact path = "/service" component = {Service} />
+            <Route exact path = "/contact" component = {Contact} />
+            <Redirect to = "/" />
+         </Switch>
+         <Footer />
+         </>
+         );
    }
 }
 export default App;
